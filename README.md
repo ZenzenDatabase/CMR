@@ -64,7 +64,9 @@ V3 pre-trained model to extract visual features, more detail seen in the followi
 # Usage
 ## Dataset Download
 
-    MV-10K dataset: 
+    MV-10K dataset: https://drive.google.com/drive/folders/1-N1uQDkwvWEBJmzRexHUA0QrRFDuvKBu?usp=sharing
+    
+    5-folds: https://drive.google.com/drive/u/1/folders/1-N1uQDkwvWEBJmzRexHUA0QrRFDuvKBu
     
     VEGAS dataset:
     
