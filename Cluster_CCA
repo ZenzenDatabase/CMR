@@ -1,0 +1,44 @@
+import numpy as np
+import utils
+import h5py
+import os
+from linear_cca import linear_cca
+import itertools
+from eval import corr_compute, metric
+
+def ccca_emb(loadfile, output_size, beta):
+	Reader = h5py.File(loadfile, 'r')
+	audioTrain =  Reader["audio_train"]
+	audioTest  =  Reader["audio_test"]
+
+	rgbTrain   =  Reader["visual_train"]
+	rgbTest    =  Reader["visual_test"]
+
+	labelTrain =  Reader["lab_train"]
+	labelTest  =  Reader["lab_test"]
+	print("you will see",len(labelTest), len(labelTrain))
+	print("Linear CCA started!")
+	w0, w1, m0, m1 = linear_cca(audioTrain, rgbTrain, labelTrain)
+	np.savez('Model_Cc_CCA.npz', w0=w0, w1=w1, m0=m0, m1=m1)
+	print("Linear CCA ended!")
+
+	audioFeatTrain, rgbFeatTrain = 0, 0
+	data_num = len(audioTest)
+	audioTest -= m0.reshape([1, -1]).repeat(data_num, axis=0)
+	audioFeatTest = np.dot(audioTest, w0)
+	rgbTest -= m1.reshape([1, -1]).repeat(data_num, axis=0)
+	rgbFeatTest = np.dot(rgbTest, w1)
+	return  audioFeatTest, rgbFeatTest, labelTest
+
+
+audioFeatTest, rgbFeatTest, labelTest = ccca_emb("Data/vegas_feature.h5", 10, 0.2)
+
+# corr_matrix = corr_compute(audioFeatTest, rgbFeatTest, "cosine")
+# result_list = metric(corr_matrix, labelTest)
+# print(result_list)
+
+with h5py.File('embedding/c_cca.h5', 'w') as hf:
+    hf.create_dataset("audio", data=audioFeatTest)
+    hf.create_dataset("visual", data=rgbFeatTest)
+    hf.create_dataset("lab", data=labelTest)
+    hf.close()
