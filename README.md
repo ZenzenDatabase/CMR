@@ -81,6 +81,20 @@ But you can download from my google drive named vegas.zip: https://drive.google.
        1. vgg file contains audio features are extracted by pre-trained vggish model.
        2. inception file is visual features are extracted by pre-trained inception V3 model.
        3. folds file is used for 5-folds cross-validation, and we keep the class balance in each fold.
+       
+## Feature Extraction
+The pre-trained model is in the google drive the same as above, named pretrain.zip
+
+**ffmpeg**:
+
+It is a tool to edit the video or audio, more detail seen: http://ffmpeg.org/. Here, I use the tool to extract audio track from video.
+
+
+
+**Vggish model**:
+
+**Inception V3 model**:
+
 ## Training
 ## Testing
 
