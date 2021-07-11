@@ -70,10 +70,16 @@ V3 pre-trained model to extract visual features, more detail seen in the followi
 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;5-folds:
     https://drive.google.com/drive/u/1/folders/1-N1uQDkwvWEBJmzRexHUA0QrRFDuvKBu
       
-      MV-10K dataset includes pre-trained model extracted audio-visual features.
+      MV-10K dataset includes pre-trained model extracted audio-visual features. 
+      More detail seen in the link:http://research.google.com/youtube8m/download.html
       
 **VEGAS dataset**:
-    
+
+      The Raw dataset from: https://arxiv.org/abs/1712.01393, now is not available, I didn't copy
+      it out from my past desktop. But you can download from my google drive named vegas.zip: https://drive.google.com/drive/folders/1-N1uQDkwvWEBJmzRexHUA0QrRFDuvKBu?usp=sharing
+       1. vgg file contains audio features are extracted by pre-trained vggish model.
+       2. inception file is visual features are extracted by pre-trained inception V3 model.
+       3. folds file is used for 5-folds cross-validation, and we keep the class balance in each fold.
 ## Training
 ## Testing
 
