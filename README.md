@@ -82,6 +82,8 @@ But you can download from my google drive named vegas.zip: https://drive.google.
        2. inception file is visual features are extracted by pre-trained inception V3 model.
        3. folds file is used for 5-folds cross-validation, and we keep the class balance in each fold.
 
+Or you can use my extracted feature named [vegas_feature.h5] and please kindly cite my paper, thank you!
+
 **AVE dataset**:
 
 Name [AVE_feature_updated_squence.h5] and Link: https://drive.google.com/drive/folders/1-N1uQDkwvWEBJmzRexHUA0QrRFDuvKBu?usp=sharing
