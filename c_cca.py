@@ -4,7 +4,7 @@ import h5py
 import os
 from linear_cca import linear_c_cca
 import itertools
-from eval import corr_compute, metric, fx_calc_map_label
+from util_triplet import corr_compute, metric
 
 def ccca_emb(loadfile, output_size, beta):
 	Reader = h5py.File(loadfile, 'r')
@@ -40,16 +40,14 @@ import time
 start = time.time()
 audioFeatTrain, rgbFeatTrain, labelTrain, audioFeatTest, rgbFeatTest, labelTest = ccca_emb("Data/vegas_feature.h5", 10, 0.2)
 # audioFeatTrain, rgbFeatTrain, labelTrain, audioFeatTest, rgbFeatTest, labelTest = ccca_emb("Data/ave/AVE_feature_update1_squence.h5", 15, 0.2)
-av_map, va_map = fx_calc_map_label(audioFeatTest, rgbFeatTest, labelTest, k = 0, dist_method='COS'), \
-    fx_calc_map_label(rgbFeatTest, audioFeatTest, labelTest, k = 0, dist_method='COS')
-average_map = (av_map+va_map)/2.0
-print(("audio_visual map = {}\nvisual_audio map = {}\naverage = {}").format(av_map, va_map, average_map))
+
+
 end = time.time()
 print("You have taken times-2:", end - start)
-# views, testLs = dcca_emb("Data/ave/AVE_feature_update1_squence.h5", output_size, batch_size, Applied_CCA)
-# corr_matrix = corr_compute(audioFeatTest, rgbFeatTest, "cosine")
-# result_list = metric(corr_matrix, labelTest)
-# print(result_list)
+corr_matrix = corr_compute(audioFeatTest, rgbFeatTest, "cosine")
+result_list = metric(corr_matrix, labelTest)
+print(result_list)
+
 
 # print(audioFeatTrain.shape, rgbFeatTrain.shape, labelTrain.shape, audioFeatTest.shape, rgbFeatTest.shape, labelTest.shape)
 # with h5py.File('embedding/c_cca_test_new.h5', 'w') as h:
