@@ -86,8 +86,6 @@ Or you can use my extracted feature named [vegas_feature.h5] and please kindly c
 
 **AVE dataset**:
 
-Name [AVE_feature_updated_squence.h5] and Link: https://drive.google.com/drive/folders/1-N1uQDkwvWEBJmzRexHUA0QrRFDuvKBu?usp=sharing
-
 Original Dataset homepage:https://sites.google.com/view/audiovisualresearch
 
 ## Feature Extraction
