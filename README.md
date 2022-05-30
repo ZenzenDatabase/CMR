@@ -95,17 +95,9 @@ The pre-trained model is in the google drive the same as above, named pretrain.z
 
 It is a tool to edit the video or audio, more detail seen: http://ffmpeg.org/. Here, I use the tool to extract audio track from video.
 
-**(I will update the left soon!!!)**
-
-**Vggish model**:
-
-**Inception V3 model**:
-
-## Training
-## Testing
 
 # Contact
-If you have any questions, please email donghuozeng@gmail.com (I am Zeng).
+If you have any questions, please email donghuozeng@gmail.com (I am Zen).
 
 ## References：
 
