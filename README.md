@@ -56,7 +56,7 @@ V3 pre-trained model to extract visual features, more detail seen in the followi
     conda 4.8.5: https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html
     python 3.5
     keras 2.0.5
-    tensorflow 1.4.1/1.3.0
+    tensorflow 1.4.1 (pip install tensorflow==1.4.1 --ignore-installed)
     theano 1.0.5
     scipy 1.4.1
     numpy 1.18.5
