@@ -62,6 +62,7 @@ V3 pre-trained model to extract visual features, more detail seen in the followi
     numpy 1.18.5
     h5py 2.10.0
     pip 20.3.4
+    sklearn
     
 # Usage
 ## Dataset Download
