@@ -78,21 +78,19 @@ V3 pre-trained model to extract visual features, more detail seen in the followi
       
 **VEGAS dataset**:
 
-The Raw dataset from: https://arxiv.org/abs/1712.01393, now is not available, I didn't copy it out from my past desktop. 
-But you can download from my google drive named vegas.zip: https://drive.google.com/drive/folders/1-N1uQDkwvWEBJmzRexHUA0QrRFDuvKBu?usp=sharing
+The Raw dataset from https://arxiv.org/abs/1712.01393 is no longer available; I didn't copy it from my previous desktop. 
+But you can download the extracted features of both audio and visual by us from my Google Drive: 
+https://drive.google.com/drive/folders/1ZtjV-sdCUpLhxd8-Ge4hnm83Rqlj5PU1?usp=drive_link
        
-       1. vgg file contains audio features are extracted by pre-trained vggish model.
-       2. inception file is visual features are extracted by pre-trained inception V3 model.
-       3. folds file is used for 5-folds cross-validation, and we keep the class balance in each fold.
-
-Or you can use my extracted feature named [vegas_feature.h5] and please kindly cite my paper, thank you!
+please kindly cite my paper, thank you!
 
 **AVE dataset**:
 
 Original Dataset homepage:https://sites.google.com/view/audiovisualresearch
+Extracted features by us: https://drive.google.com/drive/folders/1ZtjV-sdCUpLhxd8-Ge4hnm83Rqlj5PU1?usp=drive_link
 
 ## Feature Extraction
-The pre-trained model is in the google drive the same as above, named pretrain.zip
+The pre-trained model is in google drive the same as above, named pretrain.zip
 
 **ffmpeg**:
 
