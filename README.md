@@ -90,8 +90,11 @@ V3 pre-trained model to extract visual features, more detail seen in the followi
       
 **VEGAS dataset**:
 
-The Raw dataset from https://arxiv.org/abs/1712.01393 is no longer available; I didn't copy it from my previous desktop. ***If you want it, please contact me.***
-But you can download the extracted features of both audio and visual by us from my Google Drive: 
+The Raw dataset from https://arxiv.org/abs/1712.01393 is no longer available; I didn't copy it from my previous desktop. 
+
+***If you want it, please contact me.***
+
+You can also download the extracted features of both audio and visual by us from my Google Drive: 
 https://drive.google.com/drive/folders/1ZtjV-sdCUpLhxd8-Ge4hnm83Rqlj5PU1?usp=drive_link
        
 please kindly cite my paper, thank you!
@@ -110,7 +113,7 @@ It is a tool to edit the video or audio, more detail seen: http://ffmpeg.org/. H
 
 
 # Contact
-If you have any questions, please email donghuozeng@gmail.com (I am Zen).
+If you have any questions, please email donghuozeng@gmail.com (I am Zeng).
 
 ## References：
 
