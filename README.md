@@ -23,6 +23,19 @@ Donghuo Zeng, Yi Yu, Keizo Oyama. Deep triplet neural networks with cluster-cca 
 }
 ```
 
+```bash
+@article{zeng2023learning,
+  title={Learning explicit and implicit dual common subspaces for audio-visual cross-modal retrieval},
+  author={Zeng, Donghuo and Wu, Jianming and Hattori, Gen and Xu, Rong and Yu, Yi},
+  journal={ACM Transactions on Multimedia Computing, Communications and Applications},
+  volume={19},
+  number={2s},
+  pages={1--23},
+  year={2023},
+  publisher={ACM New York, NY}
+}
+```
+
 # Introduction
 
 This paper is to address cross-modal retrieval between audio and visual (silence) with audio-visual one-to-one paired datasets. 
