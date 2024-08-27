@@ -78,7 +78,6 @@ V3 pre-trained model to extract visual features, more detail seen in the followi
     sklearn
     
 # Usage
-## Dataset Download:https://drive.google.com/drive/u/1/folders/1p7QyvYSaJ-0vJla7N9UQY1XS3lTSzgdo
 
 **MV-10K dataset**: 
     https://drive.google.com/drive/u/1/folders/1-N1uQDkwvWEBJmzRexHUA0QrRFDuvKBu 
@@ -91,7 +90,7 @@ V3 pre-trained model to extract visual features, more detail seen in the followi
       
 **VEGAS dataset**:
 
-The Raw dataset from https://arxiv.org/abs/1712.01393 is no longer available; I didn't copy it from my previous desktop. 
+The Raw dataset from https://arxiv.org/abs/1712.01393 is no longer available; I didn't copy it from my previous desktop. ***If you want it, please contact me.***
 But you can download the extracted features of both audio and visual by us from my Google Drive: 
 https://drive.google.com/drive/folders/1ZtjV-sdCUpLhxd8-Ge4hnm83Rqlj5PU1?usp=drive_link
        
